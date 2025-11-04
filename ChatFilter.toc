@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: Chat Filter
+## Notes: Filter chat messages, from channels.
+## Author: Fabio
+## Version: 1.0
+## SavedVariables: ChatFilter_DB
+
+ChatFilter.lua
