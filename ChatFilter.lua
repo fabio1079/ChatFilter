@@ -309,6 +309,11 @@ function RefreshMessageList()
         child:SetParent(nil)
     end
 
+    -- Clear any previous "no results" text or other regions
+    for _, region in ipairs({messageList:GetRegions()}) do
+        region:Hide()
+    end
+
     if not currentChannel or not db.capturedMessages[currentChannel] then
         return
     end
